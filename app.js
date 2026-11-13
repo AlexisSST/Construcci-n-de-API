@@ -56,7 +56,7 @@ router.post('/login', async (req, res)=> {
     }
   
 });  
-    router.get('/', async(req,res)=>{
+    router.get('/consultar', async(req,res)=>{
       const respuesta=await ModelUser.find({})
       res.send(respuesta)
     })
